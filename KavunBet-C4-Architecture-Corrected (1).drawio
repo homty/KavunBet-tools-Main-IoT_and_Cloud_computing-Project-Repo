@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Codex" compressed="false" pages="2">
+  <diagram name="System Context" id="bJJWz5cJpoQOfT9rFanb">
+    <mxGraphModel dx="1544" dy="2368" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Name="[System Context] KavunBet Tools" c4Type="DiagramTitle" c4Description="People and external systems interacting with the platform" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot; color=&quot;#666666&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="title-58d750d3">
+          <mxCell parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#083F75;" vertex="1">
+            <mxGeometry height="65" width="900" x="20" y="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Math Developer" c4Type="Person" c4Description="Configures optimization and reviews mathematical results." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-dev">
+          <mxCell parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" vertex="1">
+            <mxGeometry height="180" width="200" x="40" y="220" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Product Owner" c4Type="Person" c4Description="Compares completed runs and selects approved artifacts." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-owner">
+          <mxCell parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" vertex="1">
+            <mxGeometry height="180" width="200" x="40" y="620" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="KavunBet Tools" c4Type="Software System" c4Description="Runs optimization jobs, tracks their lifecycle and exposes results." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-platform">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;strokeColor=#0D4D8C;metaEdit=1;" vertex="1">
+            <mxGeometry height="150" width="280" x="480" y="435" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MathEngine" c4Type="Software System" c4Description="Simulates spins, verifies mathematics, calculates statistics and generates books." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-math">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;strokeColor=#6F6877;metaEdit=1;" vertex="1">
+            <mxGeometry height="140" width="280" x="1220" y="270" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Go Auth Service" c4Type="Software System" c4Description="Authenticates users and issues identity tokens." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-auth">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;strokeColor=#6F6877;metaEdit=1;" vertex="1">
+            <mxGeometry height="130" width="280" x="1220" y="445" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MQTT Broker" c4Type="Software System" c4Description="Reliably delivers completion and telemetry events to the Pi" c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-broker">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;strokeColor=#6F6877;metaEdit=1;" vertex="1">
+            <mxGeometry height="130" width="280" x="1220" y="610" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Raspberry Pi Agent" c4Type="Software System" c4Description="Subscribes outbound over MQTTS and forwards notifications. No inbound public port." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-pi">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;strokeColor=#6F6877;metaEdit=1;" vertex="1">
+            <mxGeometry height="140" width="280" x="1210" y="800" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Telegram Bot API" c4Type="Software System" c4Description="Delivers user-visible job notifications." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-telegram">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;strokeColor=#6F6877;metaEdit=1;" vertex="1">
+            <mxGeometry height="120" width="280" x="730" y="810" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Configure and monitor optimization" c4Technology="HTTPS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="ctx-r1">
+          <mxCell edge="1" parent="1" source="ctx-dev" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.35;entryDx=0;entryDy=0;entryPerimeter=0;" target="ctx-platform">
+            <mxGeometry relative="1" width="240" x="0.0012" as="geometry">
+              <Array as="points">
+                <mxPoint x="420" y="310" />
+                <mxPoint x="420" y="487.5" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Review and select results" c4Technology="HTTPS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="ctx-r2">
+          <mxCell edge="1" parent="1" source="ctx-owner" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.7;entryDx=0;entryDy=0;entryPerimeter=0;" target="ctx-platform">
+            <mxGeometry relative="1" width="240" x="0.0244" as="geometry">
+              <Array as="points">
+                <mxPoint x="420" y="710" />
+                <mxPoint x="420" y="540" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Request simulation and verification" c4Technology="gRPC/Protobuf" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="ctx-r3">
+          <mxCell edge="1" parent="1" source="ctx-platform" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.2;exitDx=0;exitDy=0;exitPerimeter=0;" target="ctx-math">
+            <mxGeometry relative="1" width="240" x="-0.6239" y="15" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1040" y="465" />
+                <mxPoint x="1040" y="340" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Authenticate and authorize" c4Technology="HTTPS/JWT" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="ctx-r4">
+          <mxCell edge="1" parent="1" source="ctx-platform" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="ctx-auth">
+            <mxGeometry relative="1" width="240" x="-0.5111" y="20" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Publish job events" c4Technology="MQTTS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="ctx-r5">
+          <mxCell edge="1" parent="1" source="ctx-platform" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.8;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.011;entryY=0.446;entryDx=0;entryDy=0;entryPerimeter=0;" target="ctx-broker">
+            <mxGeometry relative="1" width="240" x="-0.5837" y="20" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="760" y="550" />
+                <mxPoint x="1050" y="550" />
+                <mxPoint x="1050" y="668" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Deliver and acknowledge events" c4Technology="MQTTS QoS 1" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="ctx-r6">
+          <mxCell edge="1" parent="1" source="ctx-broker" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.537;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;" target="ctx-pi">
+            <mxGeometry relative="1" width="240" x="-0.1429" y="90" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Send notification" c4Technology="HTTPS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="ctx-r7">
+          <mxCell edge="1" parent="1" source="ctx-pi" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ctx-telegram">
+            <mxGeometry relative="1" width="240" x="0.5417" y="-20" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1130" y="870" />
+                <mxPoint x="1130" y="870" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Container Diagram" id="NE731BjpTslnNCyQ_Jmk">
+    <mxGraphModel dx="1608" dy="2467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <object placeholders="1" c4Name="[Containers] KavunBet Tools" c4Type="DiagramTitle" c4Description="Target Azure architecture and runtime communication" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot; color=&quot;#666666&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="title-6fb666ab">
+          <mxCell parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#083F75;" vertex="1">
+            <mxGeometry height="65" width="900" x="20" y="15" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="KavunBet Tools" c4Type="SystemScopeBoundary" c4Description="" label="&lt;b&gt;%c4Name%&lt;/b&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="boundary">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;verticalAlign=top;align=left;spacingTop=10;spacingLeft=10;fontColor=#333333;metaEdit=1;" vertex="1">
+            <mxGeometry height="850" width="1350" x="290" y="130" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Math Developer" c4Type="Person" c4Description="Configures jobs and inspects mathematical output." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-dev">
+          <mxCell parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" vertex="1">
+            <mxGeometry height="180" width="200" y="235" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Product Owner" c4Type="Person" c4Description="Reviews runs and selects an approved result." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-owner">
+          <mxCell parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" vertex="1">
+            <mxGeometry height="180" width="200" y="570" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Analyzer Frontend" c4Type="Container" c4Description="Configuration, monitoring, comparison and artifact selection UI." c4Technology="React, Azure Static Web Apps" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-front">
+          <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="160" width="250" x="345" y="425" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="API Gateway" c4Type="Container" c4Description="TLS termination, routing, limits and security headers." c4Technology="Nginx" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-gateway">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=light-dark(#1B7FA9,#C3C3C3);metaEdit=1;" vertex="1">
+            <mxGeometry height="145" width="240" x="550" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Auth Service" c4Type="Container" c4Description="Identity, login and token operations." c4Technology="Go" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-auth">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="130" width="240" x="980" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Optimizer API" c4Type="Container" c4Description="Validates configuration and manages optimization jobs." c4Technology="Python, FastAPI, Container Apps" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-api">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="145" width="250" x="980" y="350" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Job Queue" c4Type="Container" c4Description="Durably buffers optimization commands." c4Technology="Azure Service Bus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-queue">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="135" width="240" x="1325" y="180" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Optimizer Worker" c4Type="Container" c4Description="Owns search, objective evaluation, retry, cancellation and checkpoints." c4Technology="Python, Container Apps Jobs" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-worker">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="155" width="250" x="1325" y="490" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Metadata Store" c4Type="Container" c4Description="Configurations, jobs, status, metrics, versions and artifact keys." c4Technology="Azure Cosmos DB" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-cosmos">
+          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="145" width="250" x="630" y="495" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Artifact Store" c4Type="Container" c4Description="Source and generated reel CSVs, reports and generated books." c4Technology="Azure Blob Storage" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-blob">
+          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="145" width="250" x="950" y="780" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MathEngine" c4Type="Container" c4Description="Spin simulation, verification, statistics and book generation." c4Technology="Python, gRPC" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-math">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="145" width="250" x="1320" y="780" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MQTT Broker" c4Type="Container" c4Description="Publishes job completion and failure events with QoS 1." c4Technology="Eclipse Mosquitto, MQTTS" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-mqtt">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;labelBackgroundColor=none;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#1B7FA9;metaEdit=1;" vertex="1">
+            <mxGeometry height="145" width="250" x="600" y="780" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Raspberry Pi Agent" c4Type="Software System" c4Description="Outbound MQTT subscriber; exposes no inbound public endpoint." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-pi">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;strokeColor=#6F6877;metaEdit=1;" vertex="1">
+            <mxGeometry height="110" width="260" x="700" y="1030" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Telegram Bot API" c4Type="Software System" c4Description="Sends the final user notification." c4Technology="" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="con-telegram">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;strokeColor=#6F6877;metaEdit=1;" vertex="1">
+            <mxGeometry height="110" width="250" x="1080" y="1030" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Configure and monitor" c4Technology="HTTPS" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r1">
+          <mxCell edge="1" parent="1" source="con-dev" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#666666, #ffffff);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f5f5f5;" target="con-front">
+            <mxGeometry relative="1" width="240" x="0.5" y="15" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="210" y="350" />
+                <mxPoint x="210" y="505" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Review and select results" c4Technology="HTTPS" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r2">
+          <mxCell edge="1" parent="1" source="con-owner" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.006;exitY=0.634;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.85;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-front">
+            <mxGeometry relative="1" width="240" x="0.5129" y="-19" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="210" y="684.1" />
+                <mxPoint x="210" y="561" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Call platform API" c4Technology="HTTPS/JSON + JWT" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r3">
+          <mxCell edge="1" parent="1" source="con-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-gateway">
+            <mxGeometry relative="1" width="240" x="-0.854" y="-60" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="470" y="252.5" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Login and token operations" c4Technology="HTTPS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r4">
+          <mxCell edge="1" parent="1" source="con-gateway" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.996;exitY=0.448;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-auth">
+            <mxGeometry relative="1" width="240" x="-0.0474" y="15" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Forward authenticated requests" c4Technology="HTTPS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r5">
+          <mxCell edge="1" parent="1" source="con-gateway" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-api">
+            <mxGeometry relative="1" width="240" x="0.0216" y="73" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Publish job command" c4Technology="AMQP" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r6">
+          <mxCell edge="1" parent="1" source="con-api" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-queue">
+            <mxGeometry relative="1" width="240" x="-0.6852" y="-25" as="geometry">
+              <mxPoint x="18" y="-7" as="offset" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Dispatch job" c4Technology="AMQP" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r7">
+          <mxCell edge="1" parent="1" source="con-queue" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.475;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-worker">
+            <mxGeometry relative="1" width="240" x="-0.056" y="35" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1445" y="490" />
+                <mxPoint x="1443.8" y="490" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Read and write job metadata" c4Technology="Cosmos DB API" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r8">
+          <mxCell edge="1" parent="1" source="con-api" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.35;exitY=1.0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.25;entryDx=0;entryDy=7.5;entryPerimeter=0;" target="con-cosmos">
+            <mxGeometry relative="1" width="240" x="-0.7838" y="73" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Persist status and results" c4Technology="Cosmos DB API" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r9">
+          <mxCell edge="1" parent="1" source="con-worker" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-cosmos">
+            <mxGeometry relative="1" width="240" x="-0.6757" y="20" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1102.5" y="550" />
+                <mxPoint x="1102.5" y="567.5" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Read source and write artifacts" c4Technology="Azure Blob API" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r10">
+          <mxCell edge="1" parent="1" source="con-worker" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.0;exitY=0.8;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-blob">
+            <mxGeometry relative="1" width="240" x="-0.3893" y="-80" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="1240" y="614" />
+                <mxPoint x="1240" y="852.5" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Authorize artifact access" c4Technology="Azure Blob API" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r11">
+          <mxCell edge="1" parent="1" source="con-api" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.0;exitY=0.8;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-blob">
+            <mxGeometry relative="1" width="240" x="-0.7642" y="-22" as="geometry">
+              <mxPoint x="7" y="-16" as="offset" />
+              <Array as="points">
+                <mxPoint x="925" y="466" />
+                <mxPoint x="925" y="852" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Simulate and verify" c4Technology="gRPC/Protobuf" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r12">
+          <mxCell edge="1" parent="1" source="con-worker" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.5;exitY=1.0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.517;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-math">
+            <mxGeometry relative="1" width="240" x="-0.0818" y="-50" as="geometry">
+              <mxPoint x="100" as="offset" />
+              <Array as="points" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Publish completion or failure" c4Technology="MQTTS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r13">
+          <mxCell edge="1" parent="1" source="con-worker" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FAFAFA);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-mqtt">
+            <mxGeometry relative="1" width="240" x="-0.8011" y="20" as="geometry">
+              <mxPoint x="-1" as="offset" />
+              <Array as="points">
+                <mxPoint x="1387.5" y="700" />
+                <mxPoint x="1280" y="700" />
+                <mxPoint x="1280" y="950" />
+                <mxPoint x="880" y="950" />
+                <mxPoint x="880" y="852.5" />
+              </Array>
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Deliver and acknowledge event" c4Technology="MQTTS QoS 1" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r14">
+          <mxCell edge="1" parent="1" source="con-mqtt" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=0.712;exitY=1.006;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.3;entryY=0.0;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-pi">
+            <mxGeometry relative="1" width="240" x="-0.3445" y="-88" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Type="Relationship" c4Description="Send notification" c4Technology="HTTPS/JSON" label="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;%c4Description%&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 9px&quot;&gt;[%c4Technology%]&lt;/font&gt;&lt;/div&gt;" id="con-r15">
+          <mxCell edge="1" parent="1" source="con-pi" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=light-dark(#828282,#FFFFFF);elbow=vertical;metaEdit=1;endSize=14;startSize=14;jumpStyle=arc;jumpSize=16;rounded=0;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;exitX=1.0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="con-telegram">
+            <mxGeometry relative="1" width="240" y="-25" as="geometry">
+              <mxPoint as="offset" />
+              <mxPoint as="sourcePoint" />
+              <mxPoint as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </object>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
